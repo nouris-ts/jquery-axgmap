@@ -1,10 +1,13 @@
 #AxGmap
 AxGmap is a simple jQuery plugin that allows you to easily create Google Map, add marker and info window.
 
+
+[View Demo](https://rawgit.com/Nouris-Inc/jquery-axgmap/master/example.html)
+
 ##Installation
 Here is a simple FitText setup:
 ```html
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2/jquery.min.js"></script>
 <script type="text/javascript" src="path/jquery.axgmap2.js"></script>
 ```

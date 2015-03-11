@@ -5,7 +5,7 @@ AxGmap is a simple jQuery plugin that allows you to easily create Google Map, ad
 [View Demo](https://rawgit.com/Nouris-Inc/jquery-axgmap/master/example.html)
 
 ##Installation
-Here is a simple FitText setup:
+Here is a simple setup:
 ```html
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2/jquery.min.js"></script>
@@ -43,6 +43,8 @@ Customize the marker image:
 <table>
 <tr><th>Attribute</th><th>Type</th><th>Description</th></tr>
 <tr><td>data-latlng</td><td>lat, lng</td><td>The initial Map center.</td></tr>
+<tr><td>data-map-width</td><td>number</td><td>Map width (px)</td></tr>
+<tr><td>data-map-height</td><td>number</td><td>Map Height (px)</td></tr>
 <tr><td>data-zoom</td><td>number</td><td>The initial Map zoom level.</td></tr>
 <tr><td>data-max-zoom</td><td>number</td><td>The maximum zoom level .</td></tr>
 <tr><td>data-min-zoom</td><td>number</td><td>The minimum zoom level.</td></tr>
@@ -64,8 +66,8 @@ Customize the marker image:
 <table>
 <tr><th>Attribute</th><th>Type</th><th>Description</th></tr>
 <tr><td>data-latlng</td><td>lat, lng</td><td>Marker position. Defaults to Map center.</td></tr>
-<tr><td>data-title</td><td>String</td><td>Rollover text.</td></tr>
-<tr><td>data-window-open</td><td>Boolean</td><td>If true, initial opened the info window.</td></tr>
+<tr><td>data-title</td><td>string</td><td>Rollover text.</td></tr>
+<tr><td>data-window-open</td><td>boolean</td><td>If true, initial opened the info window.</td></tr>
 <tr><td>data-marker-image</td><td>URL</td><td>The URL of the marker image</td></tr>
 </table>
 

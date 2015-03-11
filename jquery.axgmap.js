@@ -84,6 +84,12 @@
 				var mapType = this.element.data("mapType").toUpperCase();
 				$.extend(options, {'mapTypeId': google.maps.MapTypeId[mapType]});
 			};
+			if (this.element.data("mapWidth") != null) {
+				this.element.width(this.element.data("mapWidth"));
+			};
+			if (this.element.data("mapHeight") != null) {
+				this.element.height(this.element.data("mapHeight"));
+			};
 			var properties = ["zoom", "draggable", "scrollwheel", "maxZoom", "minZoom", "mapTypeControl", "overviewMapControl", "panControl", "rotateControl", "scaleControl", "streetViewControl", "zoomControl"];
 			$.each(properties, function(index, property){
 				if (self.element.data(property) != null) {

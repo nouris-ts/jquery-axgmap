@@ -145,7 +145,7 @@
 		fin: function(){
 			if (!AxGmap.didCreated) {
 				AxGmap.didCreated = true;
-				document.styleSheets[document.styleSheets.length - 1].insertRule(".gm-style img{max-width:inherit;}", 0);
+				$('<style>.gm-style img{max-width:inherit;}</style>').appendTo('head');
 			};
 		}
 	};

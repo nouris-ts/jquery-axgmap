@@ -1,5 +1,5 @@
 /*
- * AxGmap  version 1.2.0
+ * AxGmap  version 1.2.1
  * (jQuery plugin) 
  * 
  * URL       : https://github.com/Nouris-Inc/jquery-axgmap/
@@ -21,6 +21,7 @@
 	AxGmap.prototype = {
 		init: function (){
 			this.createGmap();
+			this.fin();
 		},
 		createGmap: function(){
 			var options = this.createGmapOption();
@@ -141,6 +142,12 @@
 				$('.axgmap-status-rightclick', status).empty().append(event.latLng.lat().toFixed(6) + ', ' + event.latLng.lng().toFixed(6));
 			});
 		},
+		fin: function(){
+			if (!AxGmap.didCreated) {
+				AxGmap.didCreated = true;
+				document.styleSheets[document.styleSheets.length - 1].insertRule(".gm-style img{max-width:inherit;}", 0);
+			};
+		}
 	};
 
 	$.fn.axgmap = function(){
